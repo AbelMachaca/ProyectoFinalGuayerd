@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/Logo G.png" />
+    <title>La Scaloneta</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light" id="navbar1">
+      <div class="container-fluid">
+        <div>
+          <a
+            class="navbar-brand"
+            href="https://www.guayerd.com/es/inicio/"
+            target="_blank"
+          >
+            <img src="img/Logo Guayerd.png" alt="" class="lguayerdM" />
+            <img src="img/Logo G.png" alt="" class="Lg" />
+          </a>
+          <img src="img/Logo La Scaloneta.png" alt="" class="lscaloneta" />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item nav1">
+              <a class="nav-link active" aria-current="page" href="map.html">
+                Mapa
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jugadores.html">Jugadores</a>
+            </li>
+          </ul>
+          <div>
+            <button onclick="cerrarSesion()" class="botonsesion">
+              Cerrar sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="">
+      <select
+        name=""
+        id="select"
+        onchange="changeMap()"
+        class="select1"
+        required
+      ></select>
+    </div>
+    <div id="map"></div>
+    <script src="js/map.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

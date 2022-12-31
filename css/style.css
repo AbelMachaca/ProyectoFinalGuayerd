@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --borde: 5px;
+}
+body#login {
+  background: url(../img/Messi.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form1 {
+  width: 364px;
+  background: #ffffff;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--borde);
+  padding: 35px;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.label1 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+}
+.inputall {
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+  border-radius: var(--borde);
+}
+
+.button1 {
+  width: 100%;
+  background: #374785;
+  border: 1px solid #24305e;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--borde);
+  height: 37px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.footer1 {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.Logcopa {
+  display: none;
+}
+
+.botonsesion {
+  height: 33px;
+  background: #374785;
+  border: 1px solid #24305e;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--borde);
+  width: 100%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.lscaloneta {
+  padding-left: 8px;
+  padding-right: 70px;
+}
+
+#map {
+  height: 180px;
+}
+
+.Lg {
+  display: none;
+}
+
+#navbar1 {
+  z-index: 1000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#map {
+  height: 94vh;
+}
+
+.select1 {
+  position: fixed;
+  z-index: 1000;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+  border-radius: var(--borde);
+  width: 300px;
+  height: 38px;
+  left: 50%;
+  margin-left: -130px;
+  top: 100px;
+  color: #212529;
+  padding: 5px;
+}
+select:invalid {
+  color: #999999;
+}
+
+select option[disabled] {
+  display: none;
+}
+
+option {
+  color: #212529;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.titulo1 {
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 45px;
+}
+.titulo2 {
+  color: #119dd8;
+}
+
+.carta1 {
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  padding-left: 20px;
+  margin-top: 0.6em;
+  color: #212529;
+}
+
+#p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  padding-left: 20px;
+  margin-bottom: 0.6em;
+  color: #212529;
+}
+#p6 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  padding-left: 20px;
+  margin-bottom: 1.8em;
+  color: #212529;
+}
+.jugadores {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.numero {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  body#login {
+    background: transparent;
+  }
+  #navbar1 {
+    z-index: 1100;
+  }
+
+  .form1 {
+    box-shadow: 0 0 0;
+  }
+  .Logcopa {
+    display: block;
+  }
+  .lscaloneta {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .botonsesion {
+    height: 38px;
+  }
+  .main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .footer1 {
+    display: flex;
+    justify-content: center;
+  }
+  .Lg {
+    display: inline;
+  }
+  .lguayerdM {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  #navbar1 {
+    z-index: 1100;
+  }
+}
