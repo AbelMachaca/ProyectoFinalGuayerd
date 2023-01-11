@@ -66,7 +66,7 @@ select.innerHTML = opciones3.replaceAll(",", "");
 function changeMap() {
   const objeto = objetoMapa.find((item) => item.jugador === select.value);
 
-  map.setView(new L.LatLng(...objeto.coordenada), 11);
+  map.flyTo(new L.LatLng(...objeto.coordenada), 11);
   marker.remove();
   marker = L.marker(objeto.coordenada, { icon: markerIcon }).addTo(map);
   marker.bindPopup(`<b>${objeto.jugador}</b><br>${objeto.ciudad}`).openPopup();

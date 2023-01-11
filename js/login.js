@@ -20,6 +20,12 @@ form.addEventListener("submit", (event) => {
     localStorage.setItem("logged", true);
     window.location.href = "map.html";
   } else {
-    alert("Credenciales introducidas inválidas.");
+    Swal.fire({
+      icon: "error",
+      background: "rgb(40, 46, 54)",
+      color: "rgb(255, 255, 255)",
+      title: `Error al iniciar sesión`,
+      text: `Credenciales introducidas inválidas.`
+  })
   }
 });
