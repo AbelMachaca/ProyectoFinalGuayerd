@@ -8,7 +8,7 @@
   --borde: 5px;
 }
 body#login {
-  background: url(../img/messi.png) no-repeat center center fixed;
+  background: url(../img/messi.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
